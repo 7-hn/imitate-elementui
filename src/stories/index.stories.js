@@ -16,7 +16,7 @@ export const withText = () => ({
 
 export const withJSX = () => ({
   render () {
-    return <MyButton onClick={linkTo('Button', 'With Some Emoji')}>With JSX</MyButton>
+    return <my-button onClick={linkTo('Button', 'With Some Emoji')}>With JSX</my-button>
   }
 })
 
