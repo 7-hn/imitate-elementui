@@ -1,4 +1,4 @@
-import JButton from './lib/Button'
+import JButton from './src/Button'
 import 'semantic-ui-css/semantic.min.css'
 
 JButton.install = (Vue) => {

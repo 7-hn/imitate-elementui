@@ -37,11 +37,6 @@ export default {
       type: String,
       default: '',
       required: false
-    },
-    size: {
-      type: String,
-      default: 'mini',
-      required: false
     }
   },
   render (h) {

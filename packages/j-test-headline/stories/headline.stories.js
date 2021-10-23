@@ -4,10 +4,13 @@ export default {
   component: JHeadline
 }
 
-export const Headline = () => ({
+const Headline = args => ({
   components: { JHeadline },
+  data () {
+    return { args }
+  },
   template: `
-    <j-headline :level="1" icon="setting" size="mini">
+    <j-headline v-bind="args">
       标题
       <div slot="sub">
         子标题
@@ -15,3 +18,9 @@ export const Headline = () => ({
     </j-headline>
   `
 })
+
+export const Default = Headline.bind({})
+Default.args = {
+  level: 1,
+  icon: 'setting'
+}

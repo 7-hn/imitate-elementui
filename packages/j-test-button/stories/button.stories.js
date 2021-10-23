@@ -30,7 +30,7 @@ Default.args = {
 export const anmiated = (args) => ({
   components: { JButton },
   data () {
-    return { ...args }
+    return { args }
   },
   template: `
       <div>
