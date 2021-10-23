@@ -2,6 +2,9 @@
   "name": "com",
   "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -28,6 +31,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^6.2.2",
+    "lerna": "^4.0.0",
     "vue-cli-plugin-storybook": "~2.1.0",
     "vue-template-compiler": "^2.6.11"
   }
